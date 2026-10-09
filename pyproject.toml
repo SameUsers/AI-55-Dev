@@ -1,0 +1,16 @@
+[project]
+name = "ai-55"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "natasha>=1.6.0",
+    "phonenumbers>=9.0.41",
+    "pika>=1.4.4",
+    "pydantic>=2.14.0",
+    "setuptools>=84.0.0",
+    "spacy>=3.8.16",
+    "sqlalchemy>=2.1.4",
+    "urlextract>=1.10.0",
+]
