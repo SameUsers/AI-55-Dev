@@ -12,6 +12,7 @@ class EmailProcessor:
         for match in self._EMAIL_PATTERN.finditer(text):
             parts.append(
                 AnonymizedSpan(
+                    predicted_type="email",
                     original_value=match.group(0),
                     start=match.start(),
                     end=match.end(),

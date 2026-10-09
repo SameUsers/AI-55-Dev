@@ -27,6 +27,7 @@ class RuNameProcessor:
             span.extract_fact(self._names_extractor) # type: ignore
             anonymized_parts.append(
                 AnonymizedSpan(
+                    predicted_type="ru_name",
                     original_value=text[span.start:span.stop], # type: ignore
                     start=span.start, # type: ignore
                     end=span.stop, # type: ignore

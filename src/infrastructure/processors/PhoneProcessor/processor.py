@@ -11,6 +11,7 @@ class PhoneProcessor:
         for match in phonenumbers.PhoneNumberMatcher(text, self._region):
             parts.append(
                 AnonymizedSpan(
+                    predicted_type="phone",
                     original_value=text[match.start:match.end],
                     start=match.start,
                     end=match.end,

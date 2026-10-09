@@ -14,6 +14,7 @@ class UrlProcessor:
                 continue
             parts.append(
                 AnonymizedSpan(
+                    predicted_type="url",
                     original_value=url, # type: ignore
                     start=start,
                     end=start + len(url), # type: ignore

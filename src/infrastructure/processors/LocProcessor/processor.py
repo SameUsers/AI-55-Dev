@@ -27,6 +27,7 @@ class LocationProcessor:
             span.normalize(self._morph_vocab)
             parts.append(
                 AnonymizedSpan(
+                    predicted_type="location",
                     original_value=text[span.start:span.stop],
                     start=span.start,
                     end=span.stop,

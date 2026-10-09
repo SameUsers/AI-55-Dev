@@ -26,6 +26,7 @@ class OrgProcessor:
             span.normalize(self._morph_vocab) # type: ignore
             parts.append(
                 AnonymizedSpan(
+                    predicted_type="organization",
                     original_value=text[span.start:span.stop], # type: ignore
                     start=span.start, # type: ignore
                     end=span.stop, # type: ignore

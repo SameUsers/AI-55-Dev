@@ -15,6 +15,7 @@ class EnNameProcessor:
                 continue
             parts.append(
                 AnonymizedSpan(
+                    predicted_type="en_name",
                     original_value=ent.text,
                     start=ent.start_char,
                     end=ent.end_char,
